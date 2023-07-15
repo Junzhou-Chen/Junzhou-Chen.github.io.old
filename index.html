@@ -47,8 +47,8 @@
             <li class="current"><a class="smoothscroll" href="#home"><font size="2">Home</font></a></li>
             <li><a class="smoothscroll" href="#about"><font size="2">About</font></a></a></li>
 	         <li><a class="smoothscroll" href="#resume"><font size="2">Resume</font></a></li>
-            <li><a class="smoothscroll" href="#portfolio"><font size="2">Works</font></a></li>
-            <li><a class="smoothscroll" href="#testimonials"><font size="2">Testimonials</font></a></li>
+<!--            <li><a class="smoothscroll" href="#portfolio"><font size="2">Works</font></a></li>-->
+<!--            <li><a class="smoothscroll" href="#testimonials"><font size="2">Testimonials</font></a></li>-->
             <li><a class="smoothscroll" href="#contact"><font size="2">Contact</font></a></li>
          </ul> <!-- end #nav -->
 
@@ -360,7 +360,8 @@
                  <div class="twelve columns">
 
                      <h3> Research on Medical Image Processing Methods</h3>
-
+                     <p class="info">Segmentation of Overlapping Cell Images<span>&bull;</span>
+                         <em class="date">October 2022 - Present</em></p>
                      <p>
                          The project collaborates with a medical image processing company in Nanjing to develop AI-based pathological analysis of cervical cell slice images. This project has the potential to significantly improve the early diagnosis rate of cancer in patients while greatly reducing the workload of medical professionals.
                      </p>
@@ -394,390 +395,479 @@
 
       </div> <!-- End skills -->
 
+       <div class="row work">
+
+           <div class="three columns header-col">
+               <h1><span>publications</span></h1>
+           </div>
+
+           <div class="nine columns main-col">
+
+               <div class="row item">
+
+                   <div class="twelve columns">
+
+                       <h3>Enhancing Nucleus Segmentation with HARU-Net: A Hybrid Attention based Residual U-Blocks Network</h3>
+                       <p class="info">Junzhou Chen , Qian Huang, Yulin Chen, Linyi Qian, Chengyuan Yu
+                       </p>
+                       <p class="info" style="text-align: right;">IEEE Transactions on Medical Imaging (Under Review)</p>
+                       <p> Nucleus image segmentation is a crucial step
+                           in the analysis, pathological diagnosis, and classification,
+                           which heavily relies on the quality of nucleus segmentation.
+                           However, the complexity of issues such as variations in
+                           nucleus size, blurred nucleus contours, uneven staining,
+                           cell clustering, and overlapping cells poses significant
+                           challenges. Current methods for nucleus segmentation primarily
+                           rely on nuclear morphology or contour-based approaches. Nuclear
+                           morphology-based methods exhibit limited generalization ability
+                           and struggle to effectively predictirregular-shaped nuclei, while contour-based extraction
+                           methods face challenges in accurately segmenting overlapping nuclei.
+                           To address the aforementioned issues, we propose a dual-branch network using hybrid attention based
+                           residual U-blocks for nucleus instance segmentation. The
+                           network simultaneously predicts target information and target contours. Additionally, we introduce a post-processing
+                           method that combines the target information and target
+                           contours to distinguish overlapping nuclei and generate an
+                           instance segmentation image. Within the network, we propose a context fusion block (CF-block) that effectively extracts and merges contextual information from the network.
+                           Extensive quantitative evaluations are conducted to assess the performance of our method. Experimental results
+                           demonstrate the superior performance of the proposed
+                           method compared to state-of-the-art approaches on the
+                           BNS, MoNuSeg, CoNSeg, and CPM-17 datasets. The code
+                           is available: https://github.com/Junzhou-Chen/HARU-Net</p>
+
+                   </div>
+                   <div class="twelve columns">
+
+                       <h3>CFHA-Net: Context Fusion with Hybrid Attention Network for Nucleus Segmentation</h3>
+                       <p class="info">Junzhou Chen , Qian Huang, Chengyuan Yu, Shiyu Miao, Linyi Qian, Yulin Chen
+                       </p>
+                       <p class="info" style="text-align: right;">PRCV 2023 (Under Review)</p>
+                       <p>Nucleus segmentation is a crucial step in pathological diagnosis, analysis, and cancer
+                           classification, highly dependent on the quality of nucleus segmentation. Due to uneven
+                           staining, border blurring, nuclear adhesion or overlap in cell nuclear images, cervical
+                           cell nuclei segmentation is a critical and challenging problem in automated pathology
+                           diagnosis. To overcome the limitations of existing nucleus segmentation methods, we
+                           propose a context fusion based hybrid attention network for nucleus segmentation. In
+                           this network, we replace each encoding layer of U-Net with a Residual U-Block to extract
+                           features more comprehensively and introduce an improved attention learning module to
+                           extract attention at each encoding layer, enhancing the focus on cell nuclei.
+                           Additionally, we introduce a Context Fusion Block to effectively extract and integrate
+                           contextual information within the network. We conduct qualitative and quantitative
+                           evaluations which show that our method outperforms state-of-the-art methods on series
+                           of challenging datasets.</p>
+
+                   </div>
+                   <div class="twelve columns">
+
+                       <h3>A Purified Stacking Ensemble Framework for Cytology Classification</h3>
+                       <p class="info">Linyi Qian, Qian Huang, Yulin Chen, Junzhou Chen
+                       </p>
+                       <p class="info" style="text-align: right;">PRCV 2023 (Under Review)</p>
+                       <p>Cancer is one of the fatal threats to human beings. However, early detection and diagnosis
+                           can significantly reduce death risk, in which cytology classification is indispensable.
+                           Researchers have proposed many methods for automated cancer diagnosis, but the limited
+                           accuracy and massive computational complexity cannot meet practical application needs.
+                           To address this issue, we propose a purified Stacking ensemble framework, which employs
+                           three homogeneous convolutional neural networks (CNNs) as base learners and integrates
+                           their outputs to generate a new dataset by a k-fold split and concatenation strategy.
+                           Then a voting technique is applied to purify the dataset, on which a multinomial logistic
+                           regression model with a designed loss function is trained as the meta-learner and performs
+                           the final predictions. The method is evaluated on the FNAC, Ascites, and SIPaKMeD datasets,
+                           achieving accuracies of 99.85%, 99.24%, and 99.75%, respectively. The experimental results
+                           outperform the current state-of-the-art (SOTA) methods, demonstrating its potential for
+                           reducing screening workload and helping pathologists detect cancer.</p>
+
+                   </div>
+
+               </div> <!-- item end -->
+
+           </div> <!-- main-col end -->
+
+       </div> <!-- End Work -->
+
    </section> <!-- Resume Section End-->
 
 
    <!-- Portfolio Section
    ================================================== -->
-   <section id="portfolio">
-
-      <div class="row">
-
-         <div class="twelve columns collapsed">
-
-            <h1>Check Out Some of My Works.</h1>
-
-            <!-- portfolio-wrapper -->
-            <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
-
-          	   <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-01" title="">
-                        <img alt="" src="images/portfolio/coffee.jpg">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Coffee</h5>
-                              <p>Illustrration</p>
-          					   </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
-                  </div>
-          		</div> <!-- item end -->
-
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-02" title="">
-                        <img alt="" src="images/portfolio/console.jpg">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Console</h5>
-                              <p>Web Development</p>
-          					   </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
-                  </div>
-          		</div> <!-- item end -->
-
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-03" title="">
-                        <img alt="" src="images/portfolio/judah.jpg">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Judah</h5>
-                              <p>Webdesign</p>
-          					   </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
-                  </div>
-          		</div> <!-- item end -->
-
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-04" title="">
-                        <img alt="" src="images/portfolio/into-the-light.jpg">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Into The Light</h5>
-                              <p>Photography</p>
-          					   </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
-                  </div>
-          		</div> <!-- item end -->
-
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-05" title="">
-                        <img alt="" src="images/portfolio/farmerboy.jpg">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Farmer Boy</h5>
-                              <p>Branding</p>
-          					   </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
-                  </div>
-          		</div> <!-- item end -->
-
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-06" title="">
-                        <img alt="" src="images/portfolio/girl.jpg">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Girl</h5>
-                              <p>Photography</p>
-          					   </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
+<!--   <section id="portfolio">-->
+
+<!--      <div class="row">-->
+
+<!--         <div class="twelve columns collapsed">-->
+
+<!--            <h1>Check Out Some of My Works.</h1>-->
+
+<!--            &lt;!&ndash; portfolio-wrapper &ndash;&gt;-->
+<!--            <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">-->
+
+<!--          	   <div class="columns portfolio-item">-->
+<!--                  <div class="item-wrap">-->
+
+<!--                     <a href="#modal-01" title="">-->
+<!--                        <img alt="" src="images/portfolio/coffee.jpg">-->
+<!--                        <div class="overlay">-->
+<!--                           <div class="portfolio-item-meta">-->
+<!--          					      <h5>Coffee</h5>-->
+<!--                              <p>Illustrration</p>-->
+<!--          					   </div>-->
+<!--                        </div>-->
+<!--                        <div class="link-icon"><i class="icon-plus"></i></div>-->
+<!--                     </a>-->
+
+<!--                  </div>-->
+<!--          		</div> &lt;!&ndash; item end &ndash;&gt;-->
+
+<!--               <div class="columns portfolio-item">-->
+<!--                  <div class="item-wrap">-->
+
+<!--                     <a href="#modal-02" title="">-->
+<!--                        <img alt="" src="images/portfolio/console.jpg">-->
+<!--                        <div class="overlay">-->
+<!--                           <div class="portfolio-item-meta">-->
+<!--          					      <h5>Console</h5>-->
+<!--                              <p>Web Development</p>-->
+<!--          					   </div>-->
+<!--                        </div>-->
+<!--                        <div class="link-icon"><i class="icon-plus"></i></div>-->
+<!--                     </a>-->
+
+<!--                  </div>-->
+<!--          		</div> &lt;!&ndash; item end &ndash;&gt;-->
+
+<!--               <div class="columns portfolio-item">-->
+<!--                  <div class="item-wrap">-->
+
+<!--                     <a href="#modal-03" title="">-->
+<!--                        <img alt="" src="images/portfolio/judah.jpg">-->
+<!--                        <div class="overlay">-->
+<!--                           <div class="portfolio-item-meta">-->
+<!--          					      <h5>Judah</h5>-->
+<!--                              <p>Webdesign</p>-->
+<!--          					   </div>-->
+<!--                        </div>-->
+<!--                        <div class="link-icon"><i class="icon-plus"></i></div>-->
+<!--                     </a>-->
+
+<!--                  </div>-->
+<!--          		</div> &lt;!&ndash; item end &ndash;&gt;-->
+
+<!--               <div class="columns portfolio-item">-->
+<!--                  <div class="item-wrap">-->
+
+<!--                     <a href="#modal-04" title="">-->
+<!--                        <img alt="" src="images/portfolio/into-the-light.jpg">-->
+<!--                        <div class="overlay">-->
+<!--                           <div class="portfolio-item-meta">-->
+<!--          					      <h5>Into The Light</h5>-->
+<!--                              <p>Photography</p>-->
+<!--          					   </div>-->
+<!--                        </div>-->
+<!--                        <div class="link-icon"><i class="icon-plus"></i></div>-->
+<!--                     </a>-->
+
+<!--                  </div>-->
+<!--          		</div> &lt;!&ndash; item end &ndash;&gt;-->
+
+<!--               <div class="columns portfolio-item">-->
+<!--                  <div class="item-wrap">-->
+
+<!--                     <a href="#modal-05" title="">-->
+<!--                        <img alt="" src="images/portfolio/farmerboy.jpg">-->
+<!--                        <div class="overlay">-->
+<!--                           <div class="portfolio-item-meta">-->
+<!--          					      <h5>Farmer Boy</h5>-->
+<!--                              <p>Branding</p>-->
+<!--          					   </div>-->
+<!--                        </div>-->
+<!--                        <div class="link-icon"><i class="icon-plus"></i></div>-->
+<!--                     </a>-->
+
+<!--                  </div>-->
+<!--          		</div> &lt;!&ndash; item end &ndash;&gt;-->
+
+<!--               <div class="columns portfolio-item">-->
+<!--                  <div class="item-wrap">-->
+
+<!--                     <a href="#modal-06" title="">-->
+<!--                        <img alt="" src="images/portfolio/girl.jpg">-->
+<!--                        <div class="overlay">-->
+<!--                           <div class="portfolio-item-meta">-->
+<!--          					      <h5>Girl</h5>-->
+<!--                              <p>Photography</p>-->
+<!--          					   </div>-->
+<!--                        </div>-->
+<!--                        <div class="link-icon"><i class="icon-plus"></i></div>-->
+<!--                     </a>-->
 
-                  </div>
-          		</div> <!-- item end -->
+<!--                  </div>-->
+<!--          		</div> &lt;!&ndash; item end &ndash;&gt;-->
 
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
+<!--               <div class="columns portfolio-item">-->
+<!--                  <div class="item-wrap">-->
 
-                     <a href="#modal-07" title="">
-                        <img alt="" src="images/portfolio/origami.jpg">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Origami</h5>
-                              <p>Illustrration</p>
-          					   </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
+<!--                     <a href="#modal-07" title="">-->
+<!--                        <img alt="" src="images/portfolio/origami.jpg">-->
+<!--                        <div class="overlay">-->
+<!--                           <div class="portfolio-item-meta">-->
+<!--          					      <h5>Origami</h5>-->
+<!--                              <p>Illustrration</p>-->
+<!--          					   </div>-->
+<!--                        </div>-->
+<!--                        <div class="link-icon"><i class="icon-plus"></i></div>-->
+<!--                     </a>-->
 
-                  </div>
-          		</div> <!-- item end -->
+<!--                  </div>-->
+<!--          		</div> &lt;!&ndash; item end &ndash;&gt;-->
 
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
+<!--               <div class="columns portfolio-item">-->
+<!--                  <div class="item-wrap">-->
 
-                     <a href="#modal-08" title="">
-                        <img alt="" src="images/portfolio/retrocam.jpg">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Retrocam</h5>
-                              <p>Web Development</p>
-          					   </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
+<!--                     <a href="#modal-08" title="">-->
+<!--                        <img alt="" src="images/portfolio/retrocam.jpg">-->
+<!--                        <div class="overlay">-->
+<!--                           <div class="portfolio-item-meta">-->
+<!--          					      <h5>Retrocam</h5>-->
+<!--                              <p>Web Development</p>-->
+<!--          					   </div>-->
+<!--                        </div>-->
+<!--                        <div class="link-icon"><i class="icon-plus"></i></div>-->
+<!--                     </a>-->
 
-                  </div>
-          		</div>  <!-- item end -->
+<!--                  </div>-->
+<!--          		</div>  &lt;!&ndash; item end &ndash;&gt;-->
 
-            </div> <!-- portfolio-wrapper end -->
+<!--            </div> &lt;!&ndash; portfolio-wrapper end &ndash;&gt;-->
 
-         </div> <!-- twelve columns end -->
+<!--         </div> &lt;!&ndash; twelve columns end &ndash;&gt;-->
 
 
-         <!-- Modal Popup
-	      --------------------------------------------------------------- -->
+<!--         &lt;!&ndash; Modal Popup-->
+<!--	      -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; &ndash;&gt;-->
 
-         <div id="modal-01" class="popup-modal mfp-hide">
+<!--         <div id="modal-01" class="popup-modal mfp-hide">-->
 
-		      <img class="scale-with-grid" src="images/portfolio/modals/m-coffee.jpg" alt="" />
+<!--		      <img class="scale-with-grid" src="images/portfolio/modals/m-coffee.jpg" alt="" />-->
 
-		      <div class="description-box">
-			      <h4>Coffee Cup</h4>
-			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Branding, Webdesign</span>
-		      </div>
+<!--		      <div class="description-box">-->
+<!--			      <h4>Coffee Cup</h4>-->
+<!--			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>-->
+<!--               <span class="categories"><i class="fa fa-tag"></i>Branding, Webdesign</span>-->
+<!--		      </div>-->
 
-            <div class="link-box">
-               <a href="http://www.behance.net" target="_blank">Details</a>
-		         <a class="popup-modal-dismiss">Close</a>
-            </div>
+<!--            <div class="link-box">-->
+<!--               <a href="http://www.behance.net" target="_blank">Details</a>-->
+<!--		         <a class="popup-modal-dismiss">Close</a>-->
+<!--            </div>-->
 
-	      </div><!-- modal-01 End -->
+<!--	      </div>&lt;!&ndash; modal-01 End &ndash;&gt;-->
 
-         <div id="modal-02" class="popup-modal mfp-hide">
+<!--         <div id="modal-02" class="popup-modal mfp-hide">-->
 
-		      <img class="scale-with-grid" src="images/portfolio/modals/m-console.jpg" alt="" />
+<!--		      <img class="scale-with-grid" src="images/portfolio/modals/m-console.jpg" alt="" />-->
 
-		      <div class="description-box">
-			      <h4>Console</h4>
-			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Branding, Web Development</span>
-		      </div>
+<!--		      <div class="description-box">-->
+<!--			      <h4>Console</h4>-->
+<!--			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>-->
+<!--               <span class="categories"><i class="fa fa-tag"></i>Branding, Web Development</span>-->
+<!--		      </div>-->
 
-            <div class="link-box">
-               <a href="http://www.behance.net" target="_blank">Details</a>
-		         <a class="popup-modal-dismiss">Close</a>
-            </div>
+<!--            <div class="link-box">-->
+<!--               <a href="http://www.behance.net" target="_blank">Details</a>-->
+<!--		         <a class="popup-modal-dismiss">Close</a>-->
+<!--            </div>-->
 
-	      </div><!-- modal-02 End -->
+<!--	      </div>&lt;!&ndash; modal-02 End &ndash;&gt;-->
 
-         <div id="modal-03" class="popup-modal mfp-hide">
+<!--         <div id="modal-03" class="popup-modal mfp-hide">-->
 
-		      <img class="scale-with-grid" src="images/portfolio/modals/m-judah.jpg" alt="" />
+<!--		      <img class="scale-with-grid" src="images/portfolio/modals/m-judah.jpg" alt="" />-->
 
-		      <div class="description-box">
-			      <h4>Judah</h4>
-			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Branding</span>
-		      </div>
+<!--		      <div class="description-box">-->
+<!--			      <h4>Judah</h4>-->
+<!--			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>-->
+<!--               <span class="categories"><i class="fa fa-tag"></i>Branding</span>-->
+<!--		      </div>-->
 
-            <div class="link-box">
-               <a href="http://www.behance.net" target="_blank">Details</a>
-		         <a class="popup-modal-dismiss">Close</a>
-            </div>
+<!--            <div class="link-box">-->
+<!--               <a href="http://www.behance.net" target="_blank">Details</a>-->
+<!--		         <a class="popup-modal-dismiss">Close</a>-->
+<!--            </div>-->
 
-	      </div><!-- modal-03 End -->
+<!--	      </div>&lt;!&ndash; modal-03 End &ndash;&gt;-->
 
-         <div id="modal-04" class="popup-modal mfp-hide">
+<!--         <div id="modal-04" class="popup-modal mfp-hide">-->
 
-		      <img class="scale-with-grid" src="images/portfolio/modals/m-intothelight.jpg" alt="" />
+<!--		      <img class="scale-with-grid" src="images/portfolio/modals/m-intothelight.jpg" alt="" />-->
 
-		      <div class="description-box">
-			      <h4>Into the Light</h4>
-			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Photography</span>
-		      </div>
+<!--		      <div class="description-box">-->
+<!--			      <h4>Into the Light</h4>-->
+<!--			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>-->
+<!--               <span class="categories"><i class="fa fa-tag"></i>Photography</span>-->
+<!--		      </div>-->
 
-            <div class="link-box">
-               <a href="http://www.behance.net" target="_blank">Details</a>
-		         <a class="popup-modal-dismiss">Close</a>
-            </div>
+<!--            <div class="link-box">-->
+<!--               <a href="http://www.behance.net" target="_blank">Details</a>-->
+<!--		         <a class="popup-modal-dismiss">Close</a>-->
+<!--            </div>-->
 
-	      </div><!-- modal-04 End -->
+<!--	      </div>&lt;!&ndash; modal-04 End &ndash;&gt;-->
 
-         <div id="modal-05" class="popup-modal mfp-hide">
+<!--         <div id="modal-05" class="popup-modal mfp-hide">-->
 
-		      <img class="scale-with-grid" src="images/portfolio/modals/m-farmerboy.jpg" alt="" />
+<!--		      <img class="scale-with-grid" src="images/portfolio/modals/m-farmerboy.jpg" alt="" />-->
 
-		      <div class="description-box">
-			      <h4>Farmer Boy</h4>
-			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Branding, Webdesign</span>
-		      </div>
+<!--		      <div class="description-box">-->
+<!--			      <h4>Farmer Boy</h4>-->
+<!--			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>-->
+<!--               <span class="categories"><i class="fa fa-tag"></i>Branding, Webdesign</span>-->
+<!--		      </div>-->
 
-            <div class="link-box">
-               <a href="http://www.behance.net" target="_blank">Details</a>
-		         <a class="popup-modal-dismiss">Close</a>
-            </div>
+<!--            <div class="link-box">-->
+<!--               <a href="http://www.behance.net" target="_blank">Details</a>-->
+<!--		         <a class="popup-modal-dismiss">Close</a>-->
+<!--            </div>-->
 
-	      </div><!-- modal-05 End -->
+<!--	      </div>&lt;!&ndash; modal-05 End &ndash;&gt;-->
 
-         <div id="modal-06" class="popup-modal mfp-hide">
+<!--         <div id="modal-06" class="popup-modal mfp-hide">-->
 
-		      <img class="scale-with-grid" src="images/portfolio/modals/m-girl.jpg" alt="" />
+<!--		      <img class="scale-with-grid" src="images/portfolio/modals/m-girl.jpg" alt="" />-->
 
-		      <div class="description-box">
-			      <h4>Girl</h4>
-			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Photography</span>
-		      </div>
+<!--		      <div class="description-box">-->
+<!--			      <h4>Girl</h4>-->
+<!--			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>-->
+<!--               <span class="categories"><i class="fa fa-tag"></i>Photography</span>-->
+<!--		      </div>-->
 
-            <div class="link-box">
-               <a href="http://www.behance.net" target="_blank">Details</a>
-		         <a class="popup-modal-dismiss">Close</a>
-            </div>
+<!--            <div class="link-box">-->
+<!--               <a href="http://www.behance.net" target="_blank">Details</a>-->
+<!--		         <a class="popup-modal-dismiss">Close</a>-->
+<!--            </div>-->
 
-	      </div><!-- modal-06 End -->
+<!--	      </div>&lt;!&ndash; modal-06 End &ndash;&gt;-->
 
-         <div id="modal-07" class="popup-modal mfp-hide">
+<!--         <div id="modal-07" class="popup-modal mfp-hide">-->
 
-		      <img class="scale-with-grid" src="images/portfolio/modals/m-origami.jpg" alt="" />
+<!--		      <img class="scale-with-grid" src="images/portfolio/modals/m-origami.jpg" alt="" />-->
 
-		      <div class="description-box">
-			      <h4>Origami</h4>
-			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Branding, Illustration</span>
-		      </div>
+<!--		      <div class="description-box">-->
+<!--			      <h4>Origami</h4>-->
+<!--			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>-->
+<!--               <span class="categories"><i class="fa fa-tag"></i>Branding, Illustration</span>-->
+<!--		      </div>-->
 
-            <div class="link-box">
-               <a href="http://www.behance.net" target="_blank">Details</a>
-		         <a class="popup-modal-dismiss">Close</a>
-            </div>
+<!--            <div class="link-box">-->
+<!--               <a href="http://www.behance.net" target="_blank">Details</a>-->
+<!--		         <a class="popup-modal-dismiss">Close</a>-->
+<!--            </div>-->
 
-	      </div><!-- modal-07 End -->
+<!--	      </div>&lt;!&ndash; modal-07 End &ndash;&gt;-->
 
-         <div id="modal-08" class="popup-modal mfp-hide">
+<!--         <div id="modal-08" class="popup-modal mfp-hide">-->
 
-		      <img class="scale-with-grid" src="images/portfolio/modals/m-retrocam.jpg" alt="" />
+<!--		      <img class="scale-with-grid" src="images/portfolio/modals/m-retrocam.jpg" alt="" />-->
 
-		      <div class="description-box">
-			      <h4>Retrocam</h4>
-			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Webdesign, Photography</span>
-		      </div>
+<!--		      <div class="description-box">-->
+<!--			      <h4>Retrocam</h4>-->
+<!--			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>-->
+<!--               <span class="categories"><i class="fa fa-tag"></i>Webdesign, Photography</span>-->
+<!--		      </div>-->
 
-            <div class="link-box">
-               <a href="http://www.behance.net" target="_blank">Details</a>
-		         <a class="popup-modal-dismiss">Close</a>
-            </div>
+<!--            <div class="link-box">-->
+<!--               <a href="http://www.behance.net" target="_blank">Details</a>-->
+<!--		         <a class="popup-modal-dismiss">Close</a>-->
+<!--            </div>-->
 
-	      </div><!-- modal-01 End -->
+<!--	      </div>&lt;!&ndash; modal-01 End &ndash;&gt;-->
 
 
-      </div> <!-- row End -->
+<!--      </div> &lt;!&ndash; row End &ndash;&gt;-->
 
-   </section> <!-- Portfolio Section End-->
+<!--   </section> &lt;!&ndash; Portfolio Section End&ndash;&gt;-->
 
 
-   <!-- Call-To-Action Section
-   ================================================== -->
-   <section id="call-to-action">
+<!--   &lt;!&ndash; Call-To-Action Section-->
+<!--   ================================================== &ndash;&gt;-->
+<!--   <section id="call-to-action">-->
 
-      <div class="row">
+<!--      <div class="row">-->
 
-         <div class="two columns header-col">
+<!--         <div class="two columns header-col">-->
 
-            <h1><span>Get Hosting.</span></h1>
+<!--            <h1><span>Get Hosting.</span></h1>-->
 
-         </div>
+<!--         </div>-->
 
-         <div class="seven columns">
+<!--         <div class="seven columns">-->
 
-            <h2><span class="lead">Unde Omnis Iste</span></h2>
-            <p><span class="lead">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
-            eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae. </span></p>
+<!--            <h2><span class="lead">Unde Omnis Iste</span></h2>-->
+<!--            <p><span class="lead">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,-->
+<!--            eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae. </span></p>-->
 
-         </div>
+<!--         </div>-->
 
-         <div class="three columns action">
+<!--         <div class="three columns action">-->
 
 
 
-         </div>
+<!--         </div>-->
 
-      </div>
+<!--      </div>-->
 
-   </section> <!-- Call-To-Action Section End-->
+<!--   </section> &lt;!&ndash; Call-To-Action Section End&ndash;&gt;-->
 
 
    <!-- Testimonials Section
    ================================================== -->
-   <section id="testimonials">
+<!--   <section id="testimonials">-->
 
-      <div class="text-container">
+<!--      <div class="text-container">-->
 
-         <div class="row">
+<!--         <div class="row">-->
 
-            <div class="two columns header-col">
+<!--            <div class="two columns header-col">-->
 
-               <h1><span>Client Testimonials</span></h1>
+<!--               <h1><span>Client Testimonials</span></h1>-->
 
-            </div>
+<!--            </div>-->
 
-            <div class="ten columns flex-container">
+<!--            <div class="ten columns flex-container">-->
 
-               <div class="flexslider">
+<!--               <div class="flexslider">-->
 
-                  <ul class="slides">
+<!--                  <ul class="slides">-->
 
-                     <li>
-                        <blockquote>
-                           <p>Your work is going to fill a large part of your life, and the only way to be truly satisfied is
-                           to do what you believe is great work. And the only way to do great work is to love what you do.
-                           If you haven't found it yet, keep looking. Don't settle. As with all matters of the heart, you'll know when you find it.
-                           </p>
-                           <cite>Steve Jobs</cite>
-                        </blockquote>
-                     </li> <!-- slide ends -->
+<!--                     <li>-->
+<!--                        <blockquote>-->
+<!--                           <p>Your work is going to fill a large part of your life, and the only way to be truly satisfied is-->
+<!--                           to do what you believe is great work. And the only way to do great work is to love what you do.-->
+<!--                           If you haven't found it yet, keep looking. Don't settle. As with all matters of the heart, you'll know when you find it.-->
+<!--                           </p>-->
+<!--                           <cite>Steve Jobs</cite>-->
+<!--                        </blockquote>-->
+<!--                     </li> &lt;!&ndash; slide ends &ndash;&gt;-->
 
-                     <li>
-                        <blockquote>
-                           <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
-                           Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem
-                           nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
-                           </p>
-                           <cite>Mr. Adobe</cite>
-                        </blockquote>
-                     </li> <!-- slide ends -->
+<!--                     <li>-->
+<!--                        <blockquote>-->
+<!--                           <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.-->
+<!--                           Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem-->
+<!--                           nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.-->
+<!--                           </p>-->
+<!--                           <cite>Mr. Adobe</cite>-->
+<!--                        </blockquote>-->
+<!--                     </li> &lt;!&ndash; slide ends &ndash;&gt;-->
 
-                  </ul>
+<!--                  </ul>-->
 
-               </div> <!-- div.flexslider ends -->
+<!--               </div> &lt;!&ndash; div.flexslider ends &ndash;&gt;-->
 
-            </div> <!-- div.flex-container ends -->
+<!--            </div> &lt;!&ndash; div.flex-container ends &ndash;&gt;-->
 
-         </div> <!-- row ends -->
+<!--         </div> &lt;!&ndash; row ends &ndash;&gt;-->
 
-       </div>  <!-- text-container ends -->
+<!--       </div>  &lt;!&ndash; text-container ends &ndash;&gt;-->
 
-   </section> <!-- Testimonials Section End-->
+<!--   </section> &lt;!&ndash; Testimonials Section End&ndash;&gt;-->
 
 
    <!-- Contact Section
@@ -794,9 +884,7 @@
 
             <div class="ten columns">
 
-                  <p class="lead">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
-                  eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
-                  voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+                  <p class="lead">Contact function is under development, there are some bugs, can not contact normally!
                   </p>
 
             </div>
@@ -842,7 +930,7 @@
 				   </form> <!-- Form End -->
 
                <!-- contact-warning -->
-               <div id="message-warning"> Error boy</div>
+               <div id="message-warning">Error boy</div>
                <!-- contact-success -->
 				   <div id="message-success">
                   <i class="fa fa-check"></i>Your message was sent, thank you!<br>
@@ -857,38 +945,39 @@
 
 					   <h4>Address and Phone</h4>
 					   <p class="address">
-						   Jonathan Doe<br>
-						   1600 Amphitheatre Parkway <br>
-						   Mountain View, CA 94043 US<br>
-						   <span>(123) 456-7890</span>
+						   Junzhou Chen<br>
+                           8 Focheng West Road <br>
+                           Hohai University 211100<br>
+                           Nanjing, Jiangsu, China<br>
+						   <span>(+86) 182-1979-8971</span>
 					   </p>
 
 				   </div>
 
-               <div class="widget widget_tweets">
+<!--               <div class="widget widget_tweets">-->
 
-                  <h4 class="widget-title">Latest Tweets</h4>
+<!--                  <h4 class="widget-title">Latest Tweets</h4>-->
 
-                  <ul id="twitter">
-                     <li>
-                        <span>
-                        This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
-                        Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum
-                        <a href="#">http://t.co/CGIrdxIlI3</a>
-                        </span>
-                        <b><a href="#">2 Days Ago</a></b>
-                     </li>
-                     <li>
-                        <span>
-                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
-                        eaque ipsa quae ab illo inventore veritatis et quasi
-                        <a href="#">http://t.co/CGIrdxIlI3</a>
-                        </span>
-                        <b><a href="#">3 Days Ago</a></b>
-                     </li>
-                  </ul>
+<!--                  <ul id="twitter">-->
+<!--                     <li>-->
+<!--                        <span>-->
+<!--                        This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.-->
+<!--                        Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum-->
+<!--                        <a href="#">http://t.co/CGIrdxIlI3</a>-->
+<!--                        </span>-->
+<!--                        <b><a href="#">2 Days Ago</a></b>-->
+<!--                     </li>-->
+<!--                     <li>-->
+<!--                        <span>-->
+<!--                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,-->
+<!--                        eaque ipsa quae ab illo inventore veritatis et quasi-->
+<!--                        <a href="#">http://t.co/CGIrdxIlI3</a>-->
+<!--                        </span>-->
+<!--                        <b><a href="#">3 Days Ago</a></b>-->
+<!--                     </li>-->
+<!--                  </ul>-->
 
-		         </div>
+<!--		         </div>-->
 
             </aside>
 
